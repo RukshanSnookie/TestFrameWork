@@ -9,6 +9,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.application.utilities.BrowserFactory;
 import com.application.utilities.ConfigDataProvider;
@@ -44,12 +45,14 @@ public class BaseClass {
 
 	}
 	
+	@Parameters({"Browser", "url"})
 	@BeforeClass
-	public void setup() {
+	public void setup(String Browser, String url) {
 		Reporter.log("Starting browser - Browser Ready", true);
 
-		driver =  BrowserFactory.startApplication(driver, config.getBrowser(), config.getqaUrl()) ;
-		
+//		driver =  BrowserFactory.startApplication(driver, config.getBrowser(), config.getqaUrl()) ;
+		driver =  BrowserFactory.startApplication(driver, Browser, url) ;
+
 		Reporter.log("Browser Running", true);
 
 	}

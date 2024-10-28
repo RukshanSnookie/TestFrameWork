@@ -20,12 +20,12 @@
       <![CDATA[Test done - Reports generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-10-28T09:24:08 EET" name="Suite" finished-at="2024-10-28T09:24:13 EET" duration-ms="4907">
+  <suite started-at="2024-10-28T16:18:36 EET" name="Suite" finished-at="2024-10-28T16:18:41 EET" duration-ms="4917">
     <groups>
     </groups>
-    <test started-at="2024-10-28T09:24:08 EET" name="Test" finished-at="2024-10-28T09:24:13 EET" duration-ms="4907">
+    <test started-at="2024-10-28T16:18:36 EET" name="Test" finished-at="2024-10-28T16:18:41 EET" duration-ms="4917">
       <class name="com.application.testcases.Login">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T09:24:07 EET" name="setupSuite" finished-at="2024-10-28T09:24:08 EET" duration-ms="947" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T16:18:35 EET" name="setupSuite" finished-at="2024-10-28T16:18:36 EET" duration-ms="953" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports - Test ready]]>
@@ -35,7 +35,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T09:24:08 EET" name="setup" finished-at="2024-10-28T09:24:10 EET" duration-ms="1984" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T16:18:36 EET" name="setup" finished-at="2024-10-28T16:18:38 EET" duration-ms="2002" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Starting browser - Browser Ready]]>
@@ -45,11 +45,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginApp()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T09:24:10 EET" name="LoginApp" finished-at="2024-10-28T09:24:12 EET" duration-ms="2279" status="PASS">
+        <test-method signature="LoginApp()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T16:18:38 EET" name="LoginApp" finished-at="2024-10-28T16:18:40 EET" duration-ms="2294" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T09:24:12 EET" name="tearDownMethod" finished-at="2024-10-28T09:24:13 EET" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T16:18:40 EET" name="tearDownMethod" finished-at="2024-10-28T16:18:41 EET" duration-ms="433" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDwon()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T09:24:13 EET" name="tearDwon" finished-at="2024-10-28T09:24:13 EET" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="tearDwon()[pri:0, instance:com.application.testcases.Login@140c9f39]" started-at="2024-10-28T16:18:41 EET" name="tearDwon" finished-at="2024-10-28T16:18:41 EET" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDwon -->
