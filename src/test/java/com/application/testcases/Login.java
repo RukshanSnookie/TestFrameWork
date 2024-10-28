@@ -15,10 +15,14 @@ public class Login extends BaseClass{
 	@Test
 	public void LoginApp() {
 		
+		logger = report.createTest("Login To App");
 		LoginPage  loginPage = PageFactory.initElements(driver, LoginPage.class) ;
-		loginPage.loginToWeb(excel.getStringData("logindata", 0, 0), excel.getStringData("logindata", 0, 1));
-		Helper.captureScreenshots(driver);
 		
+		logger.info("Start the Application");
+		
+		loginPage.loginToWeb(excel.getStringData("logindata", 0, 0), excel.getStringData("logindata", 0, 1));
+		
+		logger.pass("Logged In Successfully");		
 		
 	}
 	

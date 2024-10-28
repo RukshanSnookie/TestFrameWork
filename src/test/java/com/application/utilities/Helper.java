@@ -16,17 +16,20 @@ import org.openqa.selenium.WebDriver;
 
 public class Helper {
 	
-	public static void captureScreenshots(WebDriver driver) {
+	public static String captureScreenshots(WebDriver driver) {
 		
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String screenshotPath = System.getProperty("user.dir") + "/Screenshots/SS_" + getCurrentDateTime() + ".png" ;
 		
 		try {
-			Files.copy(src.toPath(), new File("./Screenshots/" + getCurrentDateTime() + ".png").toPath(), StandardCopyOption.REPLACE_EXISTING);
+			Files.copy(src.toPath(), new File(screenshotPath).toPath(), StandardCopyOption.REPLACE_EXISTING);
 			System.out.println("Screenshot Captured");
 
 		} catch (Exception e) {
 			System.out.println("Unable to take screenshots " + e.getMessage());
 		}
+		
+		return screenshotPath;
 	}
 	
 	
